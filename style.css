@@ -1,0 +1,59 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+a.banner {
+    display: block;
+    background: #ccc;
+    width: 600px;
+    height: 176px;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image: 
+        url(./images/Iron-Man176.png),
+        url(./images/Tank.gif);
+    background-position: 0 0, right top;
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    right: 47px;
+    top: 25px;
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* 가속도는 마지막에 추가 예정 */
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+@keyframes logo {
+    0% { right: -400px; }
+    10% { right: 47px; }
+    100% {}
+}
+
+.btn {
+    position: absolute;
+    left: 329px;
+    top: 134px;
+    width: 82px;
+    height: 28px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+}
